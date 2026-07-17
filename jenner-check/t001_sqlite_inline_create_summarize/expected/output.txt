@@ -1,0 +1,26 @@
+                   x2: val and derived x2 = 2*val (sqlite3 CREATE TABLE x2 AS SELECT, done natively)
+
+val   x2
+100  200
+200  400
+300  600
+400  800
+
+                      contents of x2 (analogous to sqlite3 PRAGMA table_info(x2) in the original)
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: x2
+Observations:  4
+Variables:     2
+
+Variables (in creation order):
+
+  #  Variable  Type    Len  Format  Label
+---  --------  ----  -----  ------  -----
+  1  val        Num      8
+  2  x2         Num      8
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+NOTE: Jenner v1.5.37 (build v1.5.37+886f95a5f1.20260717T051227Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA tst
+
+NOTE: Processing inline DATALINES (4 lines)
+
+NOTE: Read 4 rows from DATALINES.
+NOTE: Wrote tst (4 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL
+
+NOTE: Table x2 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=x2
+
+NOTE: PROC PRINT completed: 4 observations printed, 2 variables
+NOTE: PROC CONTENTS data=x2
+
+NOTE: PROC CONTENTS completed: 4 observations, 2 variables
