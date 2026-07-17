@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_sqlite_have_groupby_avg",
+  "source_file": "utl-utl-interface-sqlite3-with-any-language-that-supports-host-commands.sas",
+  "source_blob_sha": "1f9b4b7aadf336e8b3ebc48883d254fc7ae6fc92",
+  "source_commit": "9e0b041b6bebd6fe92d65fc95c1d199e8414f4a4",
+  "notes": "Case 2 (SHELLING OUT TO SQLITE3 FROM SAS WITH SQL FILE) documents a 'have' dataset (name/sex/age/weight, rows for Alfred/Alice/Barbara/Carol/Henry) inline in a comment block, writes an equivalent sqlite3 SQL init file, and shells to sqlite3.exe via 'x cmd /K sqlite3 -init ...' to run create table sumize as select sex, avg(age), avg(weight) from have group by sex. No sqlite3 binary or CMD.EXE is available on a hosted engine. This bundle builds the documented 'have' rows as a real DATA step (they never actually execute in the upstream .sas file) and runs the author's exact group-by-sex average query natively via PROC SQL instead of the shell-out. Note: our M avgwgt comes out 107.5 (mean of Alfred 112.5 and Henry 102.5); the upstream doc's own worked example shows 102.5, which only reflects Henry's row and appears to omit Alfred from that average — the discrepancy is in the author's documented example output, not in this bundle's logic."
+}

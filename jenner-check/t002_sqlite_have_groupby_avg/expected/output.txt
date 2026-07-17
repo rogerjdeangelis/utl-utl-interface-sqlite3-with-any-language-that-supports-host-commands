@@ -1,0 +1,25 @@
+         sumize: avg age/weight by sex (sqlite3 CREATE TABLE sumize AS SELECT ... GROUP BY sex, done natively)
+
+sex         avgage         avgwgt
+F    13.3333333333  94.8333333333
+M               14          107.5
+
+                  contents of sumize (analogous to sqlite3 PRAGMA table_info(sumize) in the original)
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: sumize
+Observations:  2
+Variables:     3
+
+Variables (in creation order):
+
+  #  Variable  Type    Len  Format  Label
+---  --------  ----  -----  ------  -----
+  1  sex       Char    200
+  2  avgage     Num      8
+  3  avgwgt     Num      8
+
+-------------------------------------------------------------------------------

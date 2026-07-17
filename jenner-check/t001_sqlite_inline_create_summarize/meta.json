@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_sqlite_inline_create_summarize",
+  "source_file": "utl-utl-interface-sqlite3-with-any-language-that-supports-host-commands.sas",
+  "source_blob_sha": "1f9b4b7aadf336e8b3ebc48883d254fc7ae6fc92",
+  "source_commit": "9e0b041b6bebd6fe92d65fc95c1d199e8414f4a4",
+  "notes": "Case 1 (SHELLING OUT TO SQLITE3 WITH INLINE SQL QUERY) shells to sqlite3.exe via 'x cmd /K sqlite3 ...' host commands to create table tst(val real), insert (100),(200),(300),(400), then create table x2 as select val, cast(2*val as real) as x2 from tst. No sqlite3 binary or CMD.EXE is available on a hosted engine, so this bundle keeps the author's table/column names and literal data and reproduces the same create+insert+derive-x2 logic natively via DATA step + PROC SQL instead of the shell-out."
+}
